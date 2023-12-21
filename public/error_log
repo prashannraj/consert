@@ -1,0 +1,1 @@
+[12-Feb-2023 05:59:32 UTC] PHP Fatal error:  Cannot use App\Models\ClassData as ClassData because the name is already in use in /home/ankitcou/book.ankitcourse.com/app/Filament/Resources/RegisterFormResource.php on line 17
