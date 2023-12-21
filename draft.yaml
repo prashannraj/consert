@@ -1,0 +1,39 @@
+models:
+  ClassData:
+    id
+    name: nullable string:255
+    order: nullable integer
+    year: nullable string:255
+    admission_from: nullable datetime
+    admission_to: nullable datetime
+    admission_fee: nullable longtext
+    extra: nullable json
+    status: nullable string:255
+    softDeletes
+    timestamps
+  Configuration:
+    id
+    config: nullable json
+    timestamps
+  RegisterForm:
+    id
+    class_data_id: id nullable foreign
+    student_name: nullable string:255
+    email: nullable string:255
+    father_name: nullable string:255
+    mother_name: nullable string:255
+    grand_father_name: nullable string:255
+    gender: nullable string:255
+    full_address: nullable string:255
+    parents_phone_number: nullable string:255
+    student_photo: nullable string:255
+    students_sign_photo: nullable string:255
+    citizenship_front_photo: nullable string:255
+    citizenship_back_photo: nullable string:255
+    transcript_photo: nullable string:255
+    character_photo: nullable string:255
+    school_fee_vouchers_photo: nullable string:255
+    extra: nullable json
+    status: nullable string:255
+    softDeletes
+    timestamps
